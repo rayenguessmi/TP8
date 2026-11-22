@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le club informatique</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/club.js" defer></script>
+  </head>
+  <body>
+    <h1 id="titre">Le club informatique</h1>
+    <img src="logo.svg" alt="Logo du club" />
+
+    <p class="info">Réunion le 15 décembre à 14 h 30</p>
+    <p class="info">Salle <b>B12</b></p>
+
+    <button class="atelier">HTML</button>
+    <button class="atelier">CSS</button>
+    <button class="atelier">JavaScript</button>
+    <button class="atelier">Git</button>
+
+    <p id="choix">Aucun atelier choisi</p>
+
+    <form id="inscription">
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" />
+      <label for="niveau">Niveau :</label>
+      <select id="niveau" name="niveau">
+        <option value="">-- Choisir --</option>
+        <option value="1">1ère année</option>
+        <option value="2">2ème année</option>
+      </select>
+
+      <input type="checkbox" id="charte" name="charte" />
+      <label for="charte">J'accepte la charte du club</label>
+
+      <button type="submit">S'inscrire</button>
+      <button type="reset">Initialiser</button>
+    </form>
+
+    <p id="message"></p>
+
+    <p>
+      <a href="https://github.com/rayenguessmi">GitHub</a> |
+      <a href="https://developer.mozilla.org">MDN</a>
+    </p>
+  </body>
+</html>
